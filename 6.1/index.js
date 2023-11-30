@@ -1,7 +1,8 @@
+require("dotenv").config();
 const mongoose = require("mongoose");
 const { User, Profile, Credentials } = require("./scheme.js");
 
-mongoose.connect("mongodb+srv://ocalin:Hola1232@prueba1.qgprhxr.mongodb.net/", {
+mongoose.connect(process.env.MONGODB_URL, {
   useNewUrlParser: false,
   useUnifiedTopology: false,
 });
