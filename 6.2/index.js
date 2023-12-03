@@ -58,60 +58,60 @@ db.once("open", () => {
 
 // Hice esto 4 veces aunque solo aparezca 1 de cada
 
-// let teacher1 = new Teachers({
-//   firstName: "Oliver",
-//   lastName: "Taylor",
-//   groups: ["I", "J"],
-// });
+let teacher1 = new Teachers({
+  firstName: "Oliver",
+  lastName: "Taylor",
+  groups: ["I", "J"],
+});
 
-// let subject1 = new Subjects({
-//   title: "Chemistry",
-//   teachers: [teacher1],
-// });
+let subject1 = new Subjects({
+  title: "Chemistry",
+  teachers: [teacher1],
+});
 
-// let mark1 = new Marks({
-//   date: new Date(),
-//   mark: 10,
-//   subjects: [subject1],
-// });
+let mark1 = new Marks({
+  date: new Date(),
+  mark: 10,
+  subjects: [subject1],
+});
 
-// let student1 = new Students({
-//   firstName: "Sophia",
-//   lastName: "Anderson",
-//   marks: [mark1],
-// });
+let student1 = new Students({
+  firstName: "Alicia",
+  lastName: "Johnson",
+  marks: [mark1],
+});
 
-// teacher1
-//   .save()
-//   .then((teacher) => {
-//     console.log("Teacher saved");
-//     console.log(teacher);
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//   });
+teacher1
+  .save()
+  .then((teacher) => {
+    console.log("Teacher saved");
+    console.log(teacher);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
-// subject1
-//   .save()
-//   .then((subject) => {
-//     console.log("Subject saved");
-//     console.log(subject);
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//   });
+subject1
+  .save()
+  .then((subject) => {
+    console.log("Subject saved");
+    console.log(subject);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
-// student1
-//   .save()
-//   .then((student) => {
-//     console.log("Student saved");
-//     console.log(student);
-//   })
-//   .catch((err) => {
-//     console.log(err);
-//   });
+student1
+  .save()
+  .then((student) => {
+    console.log("Student saved");
+    console.log(student);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
-// mark1.save().then((mark) => {
-//   console.log("Mark saved");
-//   console.log(mark);
-// });
+mark1.save().then((mark) => {
+  console.log("Mark saved");
+  console.log(mark);
+});
