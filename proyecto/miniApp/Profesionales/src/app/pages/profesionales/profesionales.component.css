@@ -1,0 +1,56 @@
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+form {
+  width: 470px; /* adjust this to change the width of the form */
+
+  padding: 20px;
+  margin: 20px auto; /* centers the form */
+  border: 1px solid #ccc;
+  border-radius: 10px; /* gives the form rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); /* gives the form a subtle shadow */
+  background-color: #fff;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.botones-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.botones-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.botones-form button:hover {
+  background-color: #0056b3;
+}
+
+.lista-prf-items {
+  flex: 1;
+  margin-right: 20px; /* adds some space between the list and the form */
+}
+
+.form-prf {
+  flex: 1;
+}

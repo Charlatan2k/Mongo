@@ -1,0 +1,43 @@
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  background-color: gray;
+  height: 15%;
+}
+
+.header-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.header-items h1 {
+  font-size: 25px;
+  color: black;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  border-color: black;
+  border: 2px solid;
+  cursor: pointer;
+  transition: all, ease-in-out, 0.2s;
+  width: auto;
+  text-align: center;
+}
+
+.header-items h1:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.header-items h1:active {
+  opacity: 50%;
+}
+
+a:visited {
+  color: inherit;
+}
